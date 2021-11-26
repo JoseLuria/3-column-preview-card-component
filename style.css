@@ -6,7 +6,6 @@
 	--dark-cyan: hsl(179, 100%, 13%);
 	--transparent: hsla(0, 0%, 100%, 0.75);
 	--light-gray: hsl(0, 0%, 95%);
-
 	--mainFont: 'Lexend Deca', sans-serif;
 	--titleFont: 'Big Shoulders Display', cursive;
 }
@@ -20,7 +19,7 @@
 body{
 	width: 100%;
 	padding: 6rem 1.5rem;
-	background-color: var(--transparent);
+	background-color: var(--light-gray);
 }
 
 .CardsContainer{
