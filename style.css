@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+	--orange: hsl(31, 77%, 52%);
+	--cyan: hsl(184, 100%, 22%);
+	--dark-cyan: hsl(179, 100%, 13%);
+	--transparent: hsla(0, 0%, 100%, 0.75);
+	--light-gray: hsl(0, 0%, 95%);
+
+	--mainFont: 'Lexend Deca', sans-serif;
+	--titleFont: 'Big Shoulders Display', cursive;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	padding: 6rem 1.5rem;
+}
+
+.CardsContainer{
+	width: 100%;
+	max-width: 945px;
+}
+
+.CardSection{
+	padding: 2.5rem;
+}
+
+.CardSection>img, h2{
+	margin-bottom: 2rem;
+}
+
+.CardSection>h2{
+	font-family: var(--titleFont);
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: var(--light-gray);
+}
+
+.CardSection>p, button{
+	font-family: var(--mainFont);
+	font-size: 1rem;
+}
+
+.CardSection>p{
+	margin-bottom: 1.5rem;
+	color: var(--transparent);
+}
+
+.CardSection>button{
+	border: none;
+	padding: 1rem 1.7rem;
+	border-radius: 2rem;
+	background-color: var(--light-gray);
+	cursor: pointer;
+}
+
+.TopSection{
+	background-color: var(--orange);
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.TopSection>button{
+	color: var(--orange);
+}
+
+.TopSection>button:hover{
+	background-color: var(--orange);
+	color: var(--transparent);
+	border: 2px solid var(--transparent);
+}
+
+.MidSection{
+	background-color: var(--cyan);
+}
+
+.MidSection>button{
+	color: var(--cyan);
+}
+
+.MidSection>button:hover{
+	background-color: var(--cyan);
+	color: var(--transparent);
+	border: 2px solid var(--transparent);
+}
+
+.BottomSection{
+	background-color: var(--dark-cyan);
+	border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.BottomSection>button{
+	color: var(--dark-cyan);
+}
+
+.BottomSection>button:hover{
+	background-color: var(--dark-cyan);
+	color: var(--transparent);
+	border: 2px solid var(--transparent);
+}
+
+@media (min-width: 900px){
+	body{
+		width: 100%;
+		height: 100vh;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.CardSection>p{
+		margin-bottom: 5rem;
+	}	
+
+	.CardsContainer{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.TopSection{
+		border-radius: 0.5rem 0 0 0.5rem;
+	}
+
+	.BottomSection{
+		border-radius: 0 0.5rem 0.5rem 0;
+	}
+}
+
